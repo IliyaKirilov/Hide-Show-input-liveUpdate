@@ -1,0 +1,17 @@
+<mvc:View controllerName="kpmg.home.Exercise1.controller.ModelView1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="My first UI5 Application">
+					<!--<Button text= "Proba" prees=".Proba"/>-->
+					<content>
+						<Button text="Hide the input :)" id="Hide" press=".onHide"></Button>
+						<Button text="Show the input :)" id="Show" press=".onShow"></Button>
+						<Input id="inputche" value="{/recipient/name}" description="Hello {/recipient/name}" valueLiveUpdate="true" width="60%"/>
+						<Link text="Open cats!" href="https://cats.com" width="auto"></Link>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
